@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            class bike {
+                constructor(company){
+                    this.company=company;
+                }
+
+}
+class vehicle extends bike{
+    constructor(speed,company){
+        super(company);
+        this.speed=speed;
+    }
+}
+var a= new vehicle(500,"apache");
+document.writeln(a.company+" "+a.speed);  
+
+        </script>
+        <!--
+ prototype
+<script>  
+//Constructor function  
+function Bike(company)  //var Bike=function(company){statements}
+{  
+    this.company=company;   
+}  
+  
+Bike.prototype.getCompany=function()  
+{  
+  return this.company;  
+}  
+//Another constructor function  
+function Vehicle(name,price) {  
+ this.name=name;  
+  this.price=price;  
+  }
+  
+     
+var bike = new Bike("Honda");  
+Vehicle.prototype=bike; //Now Bike treats as a parent of Vehicle. Vehicle extends bike 
+var vehicle=new Vehicle("Shine",70000);  
+document.writeln(vehicle.getCompany()+" "+vehicle.name+" "+vehicle.price);  
+</script>  
+-->
+
+ -->
+
+        
+    </body>
+</html>
