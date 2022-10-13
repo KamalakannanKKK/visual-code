@@ -1,0 +1,23 @@
+{
+  "user": [
+    {
+      "id": 2,
+      "employee_name": "Ranjit",
+      "employee_email": "ranjith@gmail.com",
+      "phno":9876543212
+    },
+    {
+      "id": 6,
+      "employee_name": "sanjit",
+      "employee_email": "Sanjit@gmail.com",
+      "phno":9876543212
+    }
+  ],
+  "admin": [
+    {
+      "email": "kamal@gmail.com",
+      "password": "kamala",
+      "id": 1
+    }
+  ]
+}
