@@ -86,7 +86,7 @@ a {
 img {
   max-width: 100%;
   height: auto;
-  display: block;
+  display:flex;
 }
 
 /* CUSTOM CSS CLASSES */
@@ -157,8 +157,9 @@ img {
   background-color: var(--first-color);
 }
 
-.nav_logo {
+.nav img {
   color: var(--second-color);
+  width: 45px;
 }
 
 .nav_toggle {
@@ -222,9 +223,40 @@ img {
   bottom: 0;
   width: 300px;
 }
-
+.xy{
+  position: relative;
+  left: 260px;
+}
+.xy h1{
+  position:absolute;
+  transform: translate(-50%,-50%);
+  font-size: 2.5em;
+  
+}
+.xy h1:nth-child(1){
+  color:transparent;
+  -webkit-text-stroke: 2px #151616;
+}
+.xy h1:nth-child(2){
+  color:#03a9fa;
+  animation: animate 4s ease-in-out infinite;
+}
+@keyframes animate{
+  0%,100%
+  {
+    clip-path: polygon(0% 45%, 15% 44%,32% 50%,
+    54% 60%,70% 61%,84% 59%,100% 52%,100% 100%,
+    0% 100%);
+  }
+  50%
+  {
+    clip-path: polygon(0% 45%, 15% 44%,32% 50%,
+    54% 60%,70% 61%,84% 59%,100% 52%,100% 100%,
+    0% 100%);
+  }
+}
 .home_img svg {
-  width: 100%;
+  width: 100%;padding-left: 10px;
 }
 
 /* BUTTONS */
@@ -344,7 +376,7 @@ img {
   width: 87%;
 }
 .skill_css {
-  width: 80%;
+  width: 85%;
 }
 
 .skill_js {
@@ -352,7 +384,7 @@ img {
 }
 
 .skill_microservices {
-  width: 50%;
+  width: 83%;
 }
 
 /* WORK */
@@ -370,7 +402,43 @@ img {
   border-radius: 0.5rem;
   overflow: hidden;
 }
+.mm {
+  
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+.mm h3{
+  margin:0;
+}
 
+.mm p{
+  margin-right: 15px;padding: 5px;
+}
+.mmm {
+  
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+.mmm h3{
+  margin:0;
+}
+.mmm img{
+  width: 5000px;padding: 5px;
+}
+.kk{
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  gap: 25px;
+}
+.kk xcv{
+  width:"40%";float: left;
+}
+.kk xcv{
+  width:"40%";float: right;
+}
 .work_img img {
   transition: 1s;
   cursor: pointer;
@@ -392,7 +460,15 @@ img {
   outline: none;
   margin-bottom: var(--mb-4);
 }
-
+#cons{
+  display: flex;
+}
+#lf{
+  width: 50%;text-align: center;
+}
+#rt{
+  width: 50%;text-align: center;
+}
 .control_button {
   display: block;
   border: none;
